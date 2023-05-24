@@ -1,0 +1,7 @@
+SELECT BOOK.Title, BOOK.Publisher_name
+FROM BOOK
+JOIN BOOK_AUTHORS ON BOOK.Book_id = BOOK_AUTHORS.Book_id
+JOIN BOOK_COPIES ON BOOK_COPIES.Book_id = BOOK.Book_id
+WHERE BOOK.Field_code = 'SICT'
+AND BOOK_COPIES.No_of_copies > 0
+AND BOOK.Publication_date IN ('2023-01-03', '2023-01-04');

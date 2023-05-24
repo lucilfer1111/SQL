@@ -1,0 +1,4 @@
+
+ALTER TABLE users ADD COLUMN phone_number VARCHAR(20);
+ALTER TABLE products ALTER COLUMN price TYPE INTEGER;
+ALTER TABLE orders DROP COLUMN total_price;
